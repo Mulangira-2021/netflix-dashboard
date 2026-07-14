@@ -1,15 +1,6 @@
-import subprocess
-import sys
-
-# Automatically install plotly if it is missing on the cloud server
-try:
-    import plotly.express as px
-except ModuleNotFoundError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-    import plotly.express as px
-
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # 1. Page configuration and title layout
 st.set_page_config(page_title="Netflix Insights Dashboard", layout="wide", initial_sidebar_state="expanded")

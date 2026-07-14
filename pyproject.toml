@@ -1,8 +1,0 @@
-[project]
-name = "netflix-dashboard"
-version = "0.1.0"
-dependencies = [
-    "streamlit>=1.35.0",
-    "pandas>=2.0.0",
-    "plotly>=5.15.0",
-]
